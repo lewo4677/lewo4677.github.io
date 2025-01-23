@@ -3,12 +3,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background-color: rgb(255, 47, 123);
+	background-color: rgb(255, 42, 120);
 }
 .jump {
 	font-size: 5rem;
 	position: absolute;
-	animation: jump 2s infinite;
+	animation: jump 1s infinite;
 }
 @keyframes jump {
 	0% {
