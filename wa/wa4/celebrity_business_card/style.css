@@ -1,0 +1,74 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
+
+}
+
+/* Selectors to be matched up with rulesets */
+
+
+
+
+
+
+/* Rulesets to be matched up with selectors */
+.card
+{
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: rgb(49, 102, 218);
+  border: 0.2em solid black;
+  border-radius: 1em;
+  /* padding-left: 1em; */
+
+ 
+  
+}
+
+.card .left {
+  background-color: #8712db; /* Different background color for the left section */
+  width: 22em; /* Adjust the width of the left section */
+  padding-left: 1em;
+  padding-top: 0.1em;
+  padding-bottom: 1em;
+  font-size: 1.2em;
+  color: white; /* Change text color to white for better visibility */
+}
+
+
+.card header
+{
+  /* background-image: linear-gradient(to bottom,rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0)); */
+
+  border-radius: 1.5em 1.5em 0 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-left: 0.5em;
+  margin: 0;
+  
+  
+}
+
+.card footer
+{
+  background-image: linear-gradient(to bottom,rgba(0, 192, 202, 0), rgba(0, 229, 255, 0.537));
+  border-radius: 0 0 0.5em 0.5em;
+  font-size: medium;
+  padding-left: 0.5em;
+}
+
+.card article img
+{
+  max-height: 100%;
+  float: right;
+  width: 16em;
+  
+}

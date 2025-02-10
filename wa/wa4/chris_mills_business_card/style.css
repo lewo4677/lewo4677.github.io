@@ -27,25 +27,30 @@ html {
   background-color: rgb(255, 0, 0);
   border: 0.2em solid black;
   border-radius: 1.5em;
-  padding-left: 1em;
+  /* padding-left: 1em; */
+
  
   
 }
 
 .card .left {
-  background-color: #4CAF50; /* Different background color for the left section */
-  width: 50%; /* Adjust the width of the left section */
+  background-color: #971d14; /* Different background color for the left section */
+  width: 22em; /* Adjust the width of the left section */
   padding: 1em;
-  border-radius: 1.5em 0 0 1.5em; /* Make the left side rounded */
+  
   color: white; /* Change text color to white for better visibility */
 }
-
 
 
 .card header
 {
   background-image: linear-gradient(to bottom,rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0));
   border-radius: 1.5em 1.5em 0 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-left: 0.5em;
+  margin: 0;
+  
   
 }
 
@@ -53,13 +58,14 @@ html {
 {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
   border-radius: 0 0 1.5em 1.5em;
-  
+  font-size: medium;
+  padding-left: 0.5em;
 }
 
 .card article img
 {
   max-height: 100%;
   float: right;
-  width: 13em;
+  width: 12.2em;
   
 }
