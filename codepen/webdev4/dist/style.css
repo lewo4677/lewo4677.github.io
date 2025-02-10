@@ -66,7 +66,8 @@ img {
 .card:before {
   content: "";
   background:
-   url(https://assets.codepen.io/605876/code-icon-bg.svg) 0 0 / 18% 18%,
+   /* url(https://assets.codepen.io/605876/code-icon-bg.svg) 0 0 / 18% 18%, */
+   url(file.svg) 0 0 / 18% 18%,
    linear-gradient(115deg,
      transparent 20%,
      var(--green-8) 30%,
