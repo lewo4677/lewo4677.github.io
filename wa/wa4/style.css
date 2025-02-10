@@ -8,6 +8,7 @@ html {
   font-family: 'Helvetica neue', Arial, 'sans serif';
   font-size: 10px;
   background-color: #ccc;
+
 }
 
 /* Selectors to be matched up with rulesets */
@@ -26,7 +27,20 @@ html {
   background-color: rgb(255, 0, 0);
   border: 0.2em solid black;
   border-radius: 1.5em;
+  padding-left: 1em;
+ 
+  
 }
+
+.card .left {
+  background-color: #4CAF50; /* Different background color for the left section */
+  width: 50%; /* Adjust the width of the left section */
+  padding: 1em;
+  border-radius: 1.5em 0 0 1.5em; /* Make the left side rounded */
+  color: white; /* Change text color to white for better visibility */
+}
+
+
 
 .card header
 {
@@ -47,6 +61,5 @@ html {
   max-height: 100%;
   float: right;
   width: 13em;
-  color: rgb(122, 31, 31);
-
+  
 }
