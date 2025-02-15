@@ -1,0 +1,83 @@
+
+
+#topText {
+
+    color: white;
+    font: bold;
+    font-size: large;
+    position: absolute;
+    width: 40em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+
+}
+
+
+
+#topText #GT {
+    position: absolute;
+    left: 6em;
+    top: 43em;
+    z-index: 2;
+}
+
+#topText #GS {
+    position: absolute;
+    left: 14.3em;
+    top: 42.8em;
+    z-index: 2;
+
+    color: black;
+}
+
+#topText #M {
+    position: absolute;
+    left: 17.65em;
+    top: 42.7em;
+    z-index: 2;
+
+    color: black;
+}
+
+#topText #BS {
+    position: absolute;
+    left: 18.6em;
+    top: 42.765em;
+    z-index: 2;
+
+    color: black;
+}
+
+#topText #BT {
+    position: absolute;
+    left: 22em;
+    top: 43em;
+    z-index: 2;
+}
+
+
+
+
+.close-spacing {
+    margin-right: 0.5em;  /* Minimal space between words */
+}
+
+.wide-spacing {
+    margin-right: 5em;  /* More space between words */
+}
+
+
+#middleImage {
+    position: absolute;
+    left: 3.5em;
+    top: 48em;
+    z-index: 1;
+    
+}
+#bottomImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
