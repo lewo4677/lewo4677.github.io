@@ -9,7 +9,7 @@ body{
     flex-direction: row;
 }
 #flex-parent p{
-    padding:5vw;
+    padding:5em;
 }
 
 #flex-child1{
@@ -28,19 +28,14 @@ body{
 
 #grid-parent{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(4, auto); 
-    gap: 10px; 
     width: 200px;
-    margin: auto;
     
-
 }
 
 #grid-parent h1{
     background-color: grey;
-    padding:3vw 5vh;
-    margin:5vw;
+    padding:3em 5em;
+    margin:5em;
     
 }
 #no1 { 
