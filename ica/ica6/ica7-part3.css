@@ -1,0 +1,40 @@
+
+#tallScreen, #shortScreen, #wideScreen, #narrowScreen{
+
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+#narrowScreen {
+    @media (max-width: 599px) { 
+    background-color: purple; } 
+    
+    @media (min-width: 600px) 
+    {background-color: green; } 
+}
+
+#wideScreen{
+    @media (max-width: 800px) 
+    {  background-color: red; } 
+
+    @media (min-width: 801px) 
+    { background-color: lightblue; } 
+}
+
+#shortScreen {
+    @media (max-height: 499px) { 
+    background-color: yellow; } 
+
+    @media (min-height: 500px) 
+    {  background-color: turquoise; } 
+    }
+
+#tallScreen {
+    @media (min-height: 801px) 
+    { background-color: orange; }
+
+    @media (max-height: 800px) 
+    { background-color: lavender; } 
+    
+}
