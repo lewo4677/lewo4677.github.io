@@ -51,7 +51,7 @@ img{
     height:20px;
     border-radius: 50%;
     position: absolute;
-    left: 50%;
+    left: 48.5%;
     top:-100%;
     transition: left 1.5s ease, background-color 1s;
 }
@@ -67,7 +67,7 @@ img{
 }
 
 .projects:hover ~ #red-ball {
-    left: 50%;
+    left: 48.5%;
     background-color: rgb(94, 50, 255);
 }
 
@@ -89,7 +89,7 @@ img{
     border-radius: 50%;
     position: absolute;
     left: 49%;
-    bottom: 50%;
+    bottom: 45%;
 }
 
 
