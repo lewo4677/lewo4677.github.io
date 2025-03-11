@@ -184,6 +184,7 @@ nav a:hover{
       flex-direction: row;
       /* height:20px; */
       height: 20px;
+    
       display:flex;
       justify-content: space-between;
       /* background-color:rgb(0, 102, 255); */
@@ -208,6 +209,7 @@ nav a:hover{
     nav a{
         padding-left: 10px;
         padding-right: 10px;
+        font-size: small;
       }
 
       img {
