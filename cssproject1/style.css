@@ -183,7 +183,7 @@ nav a:hover{
       padding-bottom: 6px;  /* Reset padding for very large screens */
       flex-direction: row;
       /* height:20px; */
-      height: 50px;
+      height: 20px;
     
       display:flex;
       justify-content: space-between;
@@ -192,17 +192,8 @@ nav a:hover{
       padding-top: 6px;
       padding-left: 20px;
       padding-right: 20px;
-      /* width: 2000px; */
+      width: 1650px;
       position: relative;
-    }
-
-    nav a:hover{
-        color: rgb(0, 102, 255);
-        background-color: white;
-        transition: ease-in-out;
-        border-radius: 15px;
-        height: 48px;
-    
     }
 
     /* #red-ball{
