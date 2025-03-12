@@ -20,17 +20,10 @@ body h2{
 }
 
 nav {
-    
-       
-      background-color:rgb(0, 48, 120);
-
-    
-      
+    background-color:rgb(0, 48, 120);
 }
 
 nav a{
-
-    /* width:7vw; */
     padding-left: 1.5em;
     padding-right: 1.5em;
     text-align: center;
@@ -40,123 +33,45 @@ nav a{
     border-radius: 15px;
 }   
 
-/* nav a.home{
-
-    width:5vw;
-    text-align: center;
-    text-decoration: none;
-    color:rgb(255, 255, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}   */
-
 nav a:hover{
     color: rgb(0, 102, 255);
     background-color: white;
     transition: ease-in-out;
     border-radius: 15px;
-
 }
-
-
-/* img{
-    width:30vw;
-    height: 30vh;
-} */
-
-
-/* .home:hover ~ #red-ball {
-    left: 11%;
-    background-color: rgb(94, 50, 255);
-} */
-
-
-
-
-/* #pink-ball{
-    background-color: rgb(228, 110, 255);
-    width: 40px;
-    height:40px;
-    border-radius: 50%;
-    position: absolute;
-    left: 49%;
-    bottom: 40%;
-}
-
-
-@keyframes ChangeColor {
-    0% { 
-        background-color: rgb(228, 110, 255);  
-    }
-    16%{
-        background-color: rgb(65, 58, 255); 
-    }
-    32% {
-        background-color: rgb(0, 119, 255); 
-    }
-    48% {
-        background-color: rgb(36, 255, 105);  
-    }
-    64%{
-        background-color: rgb(157, 255, 0); 
-    }
-    80%{
-        background-color: rgb(255, 255, 255); 
-    }
-    100%{
-        background-color:  rgb(228, 110, 255);
-    }
-}
-
-
-
-#pink-ball:hover {
-    animation: ChangeColor 2s ease-in-out infinite; 
-} */
-
-
-
 
 @media (max-width: 1580px) { /*when small screen*/
     nav {
-      padding-bottom: 23px;  /* Increase padding when screen width is smaller than 500px */
+      padding-bottom: 23px;
       flex-direction: column;
-      /* height:20px; */
-
-    height: 58vh;
-    display:flex;
-    justify-content: space-between;
-    /* background-color:rgb(0, 102, 255); */
-    border-radius: 15px;
-    padding-bottom: 1px;
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    position:fixed;
-    width: 12vh;
-
-    left: 2%;
-    top: 15%;
-
+      height: 58vh;
+      display:flex;
+      justify-content: space-between;
+      border-radius: 15px;
+      padding-bottom: 1px;
+      padding-top: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      position:fixed;
+      width: 12vh;
+      left: 2%;
+      top: 15%;
     }
 
     nav a{
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 1em;
-    padding-bottom: 1em;
+      padding-left: 4px;
+      padding-right: 4px;
+      padding-top: 1em;
+      padding-bottom: 1em;
     }
 
     body{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        /* background-color: rgb(93, 109, 255);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: rgb(16, 55, 114); */
         font-weight: bold;
         padding-left: 4em;
         padding-right: 4em;
-
         margin-left: 13vh;
     }
 
@@ -167,27 +82,19 @@ nav a:hover{
     }
 
     #home img {
-    
         padding-top: 2em;
         padding-bottom: 6em;
         width: 46em;
     }
-    
-
 }
-  
-  
   
 @media (min-width: 1581px) { /*big screen*/
     nav {
-      padding-bottom: 6px;  /* Reset padding for very large screens */
+      padding-bottom: 6px;
       flex-direction: row;
-      /* height:20px; */
       height: 20px;
-    
       display:flex;
       justify-content: space-between;
-      /* background-color:rgb(0, 102, 255); */
       border-radius: 15px;
       padding-top: 6px;
       padding-left: 20px;
@@ -196,24 +103,13 @@ nav a:hover{
       position: relative;
     }
 
-    /* #red-ball{
-        background-color: rgb(110, 224, 255);
-        width: 20px;
-        height:20px;
-        border-radius: 50%;
-        position: absolute;
-        left: 48.5%;
-        top:-100%;
-        transition: left 1.5s ease, background-color 1s;
-    } */
-
     nav a{
         padding-left: 10px;
         padding-right: 10px;
         font-size: small;
-      }
+    }
 
-      img {
+    img {
         padding-top: 2em;
         padding-left: 10em;
         padding-right: 10em;
@@ -222,8 +118,7 @@ nav a:hover{
         left: 50%;
     }
 
-      #home img {
-    
+    #home img {
         padding-top: 2em;
         padding-left: 10em;
         padding-right: 10em;
@@ -235,7 +130,6 @@ nav a:hover{
         margin-left: 5em;
         margin-right: 5em;
     }
-    
 }
 
 #home {
@@ -257,10 +151,6 @@ nav a:hover{
 :target ~ .concerts {
     display: none;
 }
-
-/* :target ~ #home {
-    display: block;
-} */
 
 :target:not(#home) ~ #home {
     display: none;
