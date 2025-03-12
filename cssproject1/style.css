@@ -44,7 +44,7 @@ nav a:hover{
     nav {
       padding-bottom: 23px;
       flex-direction: column;
-      height: 58vh;
+      height: 66vh;
       display:flex;
       justify-content: space-between;
       border-radius: 15px;
