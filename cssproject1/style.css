@@ -9,11 +9,11 @@ body{
     padding-left: 4em;
     padding-right: 4em;
 
-    background-image: url('img/background.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the whole page */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
-    background-attachment: fixed; /* Keeps the image fixed when scrolling */ 
+    background-image: url('img/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     
 }
 body h1{
@@ -32,6 +32,22 @@ body h1{
     background-position: -100%;
 
     animation: animateTitle 3s infinite alternate-reverse; 
+}
+
+body h2 {
+    /* background-size: 400%;
+    background-position: -100%;
+    color: tranaprent;
+    animation: animateTitle 3s infinite alternate-reverse;  */
+    color:rgb(0, 213, 255)
+}
+
+body h3 {
+    /* background-size: 400%;
+    background-position: -100%;
+    color: tranaprent;
+    animation: animateTitle 3s infinite alternate-reverse;  */
+    color: white;
 }
 
 @keyframes animateTitle {
@@ -223,19 +239,19 @@ nav label:hover{
     }
     
     body h1 {
-        font-size: 2em; /* Smaller title on very small screens */
+        font-size: 2em; 
     }
     
     body h2 {
         font-size: 1.5em;
     }
     .IMG {
-        width: 100%; /* Make the image container take up 100% of its parent container width */
-        max-width: 600px; /* You can set a maximum width to prevent it from growing too large */
-        padding: 20px; /* Add padding around the image */
-        box-sizing: border-box; /* Ensures padding is included in the element's total width */
+        width: 100%; 
+        max-width: 600px;
+        padding: 20px; 
+        box-sizing: border-box; 
         height: auto;
-        margin: 0 auto; /* Centers the container */
+        margin: 0 auto; 
     }
 }
 
@@ -298,9 +314,9 @@ nav label:hover{
 
     .IMG {
        
-        max-width: 600px; /* You can set a maximum width to prevent it from growing too large */
-        padding: 20px; /* Add padding around the image */
-        box-sizing: border-box; /* Ensures padding is included in the element's total width */
+        max-width: 600px; 
+        padding: 20px; 
+        box-sizing: border-box;
         height: auto;
         width: 60%;
     }
@@ -329,18 +345,18 @@ nav label:hover{
     .flex-row {
         display: flex;
         flex-direction: row;
-        justify-content: space-between; /* Keeps items spaced apart */
+        justify-content: space-between; 
         align-items: flex-start;
-        width: 100%; /* Use full width available */
-        margin: 20px 0; /* Adjust vertical margins */
-        gap: 30px; /* Increase space between elements */
+        width: 100%;
+        margin: 20px 0; 
+        gap: 30px;
     }
     
     .titles-pieces {
         display: flex;
         flex-direction: column;
-        flex: 1; /* Allow to grow */
-        max-width: 50%; /* Limit maximum width */
+        flex: 1; 
+        max-width: 50%; 
         order: 1;
         align-self: flex-start;
     }
@@ -354,7 +370,7 @@ nav label:hover{
     }
     
     .concertimgs {
-        width: 100%; /* Make image fit container */
+        width: 100%; 
         height: auto;
         border-radius: 10px; 
     }
@@ -413,47 +429,15 @@ nav label:hover{
 
 
 
-/* section {
-    display: none;
-}
-
-section:target {
-    display: block;
-}
-
-#home {
-    display: block;
-}
-
-section:target ~ #home {
-    display: none;
-} */
 
 
-/* .concerts {
-    display:none;
-}
 
-.concerts:target {
-    display: block;
-}   
-
-.concerts:target ~ #home{
-    display:none
-}
-
-:target #home {
-    display: block;
-}
- */
-
-
-/* Hide all concert pages by default */
+/* hide all concert pages by default */
 .concerts {
     display: none;
 }
 
-/* Show only the selected page */
+/* show only the selected page */
 #home-tab:checked ~ #home,
 #concert1-tab:checked ~ #concert1,
 #concert2-tab:checked ~ #concert2,
