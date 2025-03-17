@@ -62,62 +62,30 @@ body h5 {
     font-size: 1.5em;
 }
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Spaces elements apart */
-    align-items: flex-start; /* Align items to the top */
-    /* width: 40%; */
-    margin: 20px auto;
-    gap: 20px; /* Adds spacing between sections */
+
+
+
+.concert-pieces { 
+    align-self: center;
 }
-
-.titles-pieces {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    /* width: 60%; */
-    min-width: 450px;
-    order: 1;
-    width: 40%
-}
-
-/* .titles-pieces h3 {
-    width: 100%;
-}
-
-.titles-pieces h4 {
-    width: 100%;
-} */
-
-/* .concert-pieces { 
-    f
-} */
 
 .concert-titles {
     font-family: 'Audiowide';
 }
 
-.concertimgs {
-    flex: 1; 
-    max-width: 45%; 
-    height: auto;
-    order: 2;
-}
-
 .concert-description {
     margin-top: 20px;
     text-align: justify;
-    max-width: 80%; /* Keeps it readable */
+    max-width: 80%; 
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.flex-row,  .concertimgs, .concert-description {  
+.flex-row,   .concert-description {  
     background-color:rgb(0, 213, 255);
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Add padding for spacing */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 15px; 
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 
 }
 
@@ -169,7 +137,7 @@ nav label{
 
 
 nav label:hover{
-    color: rgb(0, 213, 255);
+    color: rgb(2, 49, 121);
     background-color: white;
     transition: ease-in-out;
     border-radius: 15px;
@@ -244,7 +212,32 @@ nav label:hover{
     animation: ChangeColor 2s ease-in-out infinite; 
 } */
 
-
+@media (max-width: 480px) {
+    body {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    .flex-row {
+        gap: 15px;
+    }
+    
+    body h1 {
+        font-size: 2em; /* Smaller title on very small screens */
+    }
+    
+    body h2 {
+        font-size: 1.5em;
+    }
+    .IMG {
+        width: 100%; /* Make the image container take up 100% of its parent container width */
+        max-width: 600px; /* You can set a maximum width to prevent it from growing too large */
+        padding: 20px; /* Add padding around the image */
+        box-sizing: border-box; /* Ensures padding is included in the element's total width */
+        height: auto;
+        margin: 0 auto; /* Centers the container */
+    }
+}
 
 @media (max-width: 1580px) { /*when small screen*/
     nav {
@@ -302,6 +295,15 @@ nav label:hover{
         padding-bottom: 6em;
         width: 46em;
     }
+
+    .IMG {
+       
+        max-width: 600px; /* You can set a maximum width to prevent it from growing too large */
+        padding: 20px; /* Add padding around the image */
+        box-sizing: border-box; /* Ensures padding is included in the element's total width */
+        height: auto;
+        width: 60%;
+    }
 }
   
 @media (min-width: 1581px) { /*big screen*/
@@ -319,67 +321,44 @@ nav label:hover{
       padding-right: 20px;
       width: 1450px;
 
-      position: sticky;
       /* transition: all 0.5s ease-in-out; */
 
       z-index: 3;
     }
 
-    /* nav.scrolled {
-        font-size: 1.2em;
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Keeps items spaced apart */
+        align-items: flex-start;
+        width: 100%; /* Use full width available */
+        margin: 20px 0; /* Adjust vertical margins */
+        gap: 30px; /* Increase space between elements */
     }
-
-
-    nav:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        background-color: rgba(0, 48, 120, 0.7); /* Transparent background */
-        /* z-index: -1;
-        transition: opacity 0.3s ease; */
-    /* }
     
-    nav:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 5px;
-        background-color: rgb(0, 48, 120);
-        opacity: 0;
-        transition: opacity 0.3s ease;
+    .titles-pieces {
+        display: flex;
+        flex-direction: column;
+        flex: 1; /* Allow to grow */
+        max-width: 50%; /* Limit maximum width */
+        order: 1;
+        align-self: flex-start;
     }
-
-    nav.scrolled:after {
-        opacity: 1;
-    }  */
-
-
-    /* #red-ball{
-        background-color: rgb(110, 224, 255);
-        width: 20px;
-        height:20px;
-        border-radius: 50%;
-        position: absolute;
-        left: 48.5%;
-        top:-100%;
-        transition: left 1.5s ease, background-color 1s;
-    } */
-
-
-/* 
-    nav label{
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: small;
-        /* transition: all 0.5s ease-in-out; 
-
-    } */
-
+    
+    .IMG {
+        flex: 1; 
+        max-width: 45%; 
+        order: 2;
+        align-self: flex-start;
+        margin-right: 15%;
+    }
+    
+    .concertimgs {
+        width: 100%; /* Make image fit container */
+        height: auto;
+        border-radius: 10px; 
+    }
+    
     img {
         padding-top: 2em;
         padding-left: 10em;
@@ -387,6 +366,7 @@ nav label:hover{
         padding-bottom: 6em;
         width: 60em;
         left: 50%;
+        margin-right:10% ;
     }
 
     #home img {
@@ -487,6 +467,8 @@ section:target ~ #home {
 #concert10-tab:checked ~ #concert10 {
     display: block;
 }
+
+
 
 
 
