@@ -2,28 +2,161 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(102, 150, 255);
+    /* background-color: rgb(102, 150, 255); */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(2, 49, 121);
     font-weight: bold;
     padding-left: 4em;
     padding-right: 4em;
+
+    background-image: url('img/background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */ 
+    
 }
 body h1{
     padding-bottom: 10px;
     border-radius: 15px;
     align-items: center;
+    font-family: 'Audiowide';
+    font-size: 3em;
+    background-image: linear-gradient(to right, rgb(2, 49, 121), rgb(0, 213, 255), magenta);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+
+    background-size: 400%;
+    background-position: -100%;
+
+    animation: animateTitle 3s infinite alternate-reverse; 
 }
+
+@keyframes animateTitle {
+
+    to {
+        background-position: 100%;
+    }
+}
+
+
 
 body h2{
     color: black;
+    font-family: 'Audiowide';
 }
+/* body h3{
+    
+} */
+
+
+body h4 {
+    font-size: 1.5em;
+    font-family: 'Doto';
+    font-weight: bold;
+}
+
+body h5 {
+    font-size: 1.5em;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Spaces elements apart */
+    align-items: flex-start; /* Align items to the top */
+    /* width: 40%; */
+    margin: 20px auto;
+    gap: 20px; /* Adds spacing between sections */
+}
+
+.titles-pieces {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* width: 60%; */
+    min-width: 450px;
+    order: 1;
+    width: 40%
+}
+
+/* .titles-pieces h3 {
+    width: 100%;
+}
+
+.titles-pieces h4 {
+    width: 100%;
+} */
+
+/* .concert-pieces { 
+    f
+} */
+
+.concert-titles {
+    font-family: 'Audiowide';
+}
+
+.concertimgs {
+    flex: 1; 
+    max-width: 45%; 
+    height: auto;
+    order: 2;
+}
+
+.concert-description {
+    margin-top: 20px;
+    text-align: justify;
+    max-width: 80%; /* Keeps it readable */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.flex-row,  .concertimgs, .concert-description {  
+    background-color:rgb(0, 213, 255);
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Add padding for spacing */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+
+}
+
+
+
+.doto-1 { /* pixely font */
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 3;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 0;
+} 
+
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.sixtyfour-1 {
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0;
+  }
+  
 
 nav {
     background-color:rgb(0, 48, 120);
 }
 
-nav a{
+nav label{
+    
+       /* width:7vw; */
     padding-left: 1.5em;
     padding-right: 1.5em;
     text-align: center;
@@ -33,20 +166,96 @@ nav a{
     border-radius: 15px;
 }   
 
-nav a:hover{
-    color: rgb(0, 102, 255);
+
+
+nav label:hover{
+    color: rgb(0, 213, 255);
     background-color: white;
     transition: ease-in-out;
     border-radius: 15px;
 }
 
+
+
+/* nav a.home{
+
+    width:5vw;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}   */
+
+
+
+
+/* img{
+    width:30vw;
+    height: 30vh;
+} */
+
+
+/* .home:hover ~ #red-ball {
+    left: 11%;
+    background-color: rgb(94, 50, 255);
+} */
+
+
+
+
+/* #pink-ball{
+    background-color: rgb(228, 110, 255);
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 49%;
+    bottom: 40%;
+}
+
+
+@keyframes ChangeColor {
+    0% { 
+        background-color: rgb(228, 110, 255);  
+    }
+    16%{
+        background-color: rgb(65, 58, 255); 
+    }
+    32% {
+        background-color: rgb(0, 119, 255); 
+    }
+    48% {
+        background-color: rgb(36, 255, 105);  
+    }
+    64%{
+        background-color: rgb(157, 255, 0); 
+    }
+    80%{
+        background-color: rgb(255, 255, 255); 
+    }
+    100%{
+        background-color:  rgb(228, 110, 255);
+    }
+}
+
+
+
+#pink-ball:hover {
+    animation: ChangeColor 2s ease-in-out infinite; 
+} */
+
+
+
 @media (max-width: 1580px) { /*when small screen*/
     nav {
       padding-bottom: 23px;
       flex-direction: column;
+         /* height:20px; */
+
       height: 66vh;
       display:flex;
       justify-content: space-between;
+
       border-radius: 15px;
       padding-bottom: 1px;
       padding-top: 10px;
@@ -54,15 +263,22 @@ nav a:hover{
       padding-right: 5px;
       position:fixed;
       width: 12vh;
+
       left: 2%;
       top: 15%;
+
+      /* transition: all 0.5s ease-in-out; */
+
     }
 
-    nav a{
+    nav label{
       padding-left: 4px;
       padding-right: 4px;
       padding-top: 1em;
       padding-bottom: 1em;
+
+      /* transition: all 0.5s ease-in-out; */
+
     }
 
     body{
@@ -92,6 +308,8 @@ nav a:hover{
     nav {
       padding-bottom: 6px;
       flex-direction: row;
+         /* height:20px; */
+
       height: 20px;
       display:flex;
       justify-content: space-between;
@@ -100,14 +318,67 @@ nav a:hover{
       padding-left: 20px;
       padding-right: 20px;
       width: 1450px;
-      position: relative;
+
+      position: sticky;
+      /* transition: all 0.5s ease-in-out; */
+
+      z-index: 3;
     }
 
-    nav a{
+    /* nav.scrolled {
+        font-size: 1.2em;
+    }
+
+
+    nav:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background-color: rgba(0, 48, 120, 0.7); /* Transparent background */
+        /* z-index: -1;
+        transition: opacity 0.3s ease; */
+    /* }
+    
+    nav:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background-color: rgb(0, 48, 120);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    nav.scrolled:after {
+        opacity: 1;
+    }  */
+
+
+    /* #red-ball{
+        background-color: rgb(110, 224, 255);
+        width: 20px;
+        height:20px;
+        border-radius: 50%;
+        position: absolute;
+        left: 48.5%;
+        top:-100%;
+        transition: left 1.5s ease, background-color 1s;
+    } */
+
+
+/* 
+    nav label{
         padding-left: 10px;
         padding-right: 10px;
         font-size: small;
-    }
+        /* transition: all 0.5s ease-in-out; 
+
+    } */
 
     img {
         padding-top: 2em;
@@ -132,7 +403,7 @@ nav a:hover{
     }
 }
 
-#home {
+/* #home {
     display: block;
 }
 
@@ -152,6 +423,70 @@ nav a:hover{
     display: none;
 }
 
+:target ~ #home {
+    display: block;
+}
+
 :target:not(#home) ~ #home {
     display: none;
+} */
+
+
+
+/* section {
+    display: none;
 }
+
+section:target {
+    display: block;
+}
+
+#home {
+    display: block;
+}
+
+section:target ~ #home {
+    display: none;
+} */
+
+
+/* .concerts {
+    display:none;
+}
+
+.concerts:target {
+    display: block;
+}   
+
+.concerts:target ~ #home{
+    display:none
+}
+
+:target #home {
+    display: block;
+}
+ */
+
+
+/* Hide all concert pages by default */
+.concerts {
+    display: none;
+}
+
+/* Show only the selected page */
+#home-tab:checked ~ #home,
+#concert1-tab:checked ~ #concert1,
+#concert2-tab:checked ~ #concert2,
+#concert3-tab:checked ~ #concert3,
+#concert4-tab:checked ~ #concert4,
+#concert5-tab:checked ~ #concert5,
+#concert6-tab:checked ~ #concert6,
+#concert7-tab:checked ~ #concert7,
+#concert8-tab:checked ~ #concert8,
+#concert9-tab:checked ~ #concert9,
+#concert10-tab:checked ~ #concert10 {
+    display: block;
+}
+
+
+
