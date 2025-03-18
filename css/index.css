@@ -34,12 +34,12 @@ body h1{
     animation: animateTitle 3s infinite alternate-reverse; 
 }
 
-body h2 {
-    /* background-size: 400%;
-    background-position: -100%;
-    color: tranaprent;
-    animation: animateTitle 3s infinite alternate-reverse;  */
-    color:rgb(0, 213, 255)
+
+
+@keyframes glowAnimate {
+    0% { text-shadow: 0 0 15px rgb(2, 49, 121), 0 0 20px rgb(0, 213, 255), 0 0 30px magenta; }
+    50% { text-shadow: 0 0 20px rgb(0, 213, 255), 0 0 25px magenta, 0 0 35px rgb(2, 49, 121); }
+    100% { text-shadow: 0 0 15px magenta, 0 0 20px rgb(2, 49, 121), 0 0 30px rgb(0, 213, 255); }
 }
 
 body h3 {
@@ -50,6 +50,7 @@ body h3 {
     color: white;
 }
 
+
 @keyframes animateTitle {
 
     to {
@@ -59,13 +60,17 @@ body h3 {
 
 
 
-body h2{
-    color: black;
+body h2, h6{
+    color: rgb(255, 255, 255);
     font-family: 'Audiowide';
+    animation: glowAnimate 3s infinite alternate-reverse;
 }
 /* body h3{
     
 } */
+body h6 {
+    font-size: 2em;
+}
 
 
 body h4 {
@@ -76,11 +81,12 @@ body h4 {
 
 body h5 {
     font-size: 1.5em;
+    font-family: 'Audiowide';
 }
 
-
-
-
+.flex-row {
+    margin-right: 10%;
+}
 .concert-pieces { 
     align-self: center;
 }
@@ -92,9 +98,9 @@ body h5 {
 .concert-description {
     margin-top: 20px;
     text-align: justify;
-    max-width: 80%; 
+    /* max-width: 80%; 
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 10%; */
 }
 
 .flex-row,   .concert-description {  
@@ -228,12 +234,24 @@ nav label:hover{
     animation: ChangeColor 2s ease-in-out infinite; 
 } */
 
+
 @media (max-width: 480px) {
     body {
         padding-left: 1em;
         padding-right: 1em;
-    }
+        margin-left: 20%;
+        font-size: x-small;
     
+    }
+
+    /* .concertimgs {
+        max-width: 100px;
+    } */
+   
+    nav {
+        height: 66vh;
+    }
+
     .flex-row {
         gap: 15px;
     }
@@ -244,16 +262,24 @@ nav label:hover{
     
     body h2 {
         font-size: 1.5em;
+        margin-left: 10em;;
     }
-    .IMG {
-        width: 100%; 
-        max-width: 600px;
-        padding: 20px; 
-        box-sizing: border-box; 
-        height: auto;
-        margin: 0 auto; 
+    
+/* 
+    img #home{
+        width:20px;
+    } */
+    #home img {
+        padding-top: 2em;
+        padding-bottom: 6em;
+        width: 90%;
+        margin-left: 15%;
     }
 }
+
+/* @media (max-width: 1000px) {
+    
+} */
 
 @media (max-width: 1580px) { /*when small screen*/
     nav {
@@ -280,6 +306,10 @@ nav label:hover{
 
     }
 
+    body h2, h6 {
+        margin-left: 18%;
+    }
+
     nav label{
       padding-left: 4px;
       padding-right: 4px;
@@ -290,7 +320,9 @@ nav label:hover{
 
     }
 
-    body{
+
+
+    /* body{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -298,28 +330,45 @@ nav label:hover{
         padding-left: 4em;
         padding-right: 4em;
         margin-left: 13vh;
+
+        margin-right: 10%;
+        max-width: 500px;
+    } */
+
+    .flex-row, .concert-description { 
+        max-width: 62%;
+        margin-left: 22%;
+        padding: 1.5em;
     }
 
-    img {
+   
+    .concertimgs {
+        max-width: 100%;
+    }
+
+    /* img {
         padding-top: 2em;
         padding-bottom: 6em;
-        width: 46em;
-    }
+        width: 38rem;
+    } */
 
     #home img {
         padding-top: 2em;
         padding-bottom: 6em;
-        width: 46em;
+        width: 90%;
+        margin-left: 10%;
     }
 
-    .IMG {
+    /* .IMG {
        
         max-width: 600px; 
         padding: 20px; 
         box-sizing: border-box;
         height: auto;
-        width: 60%;
-    }
+        width: 36em;
+    } */
+
+    
 }
   
 @media (min-width: 1581px) { /*big screen*/
@@ -398,6 +447,17 @@ nav label:hover{
         margin-right: 5em;
     }
 }
+
+@media (max-height: 850px)
+{
+    nav label {
+        font-size: 0.4em;
+    }
+}
+
+
+
+
 
 /* #home {
     display: block;
