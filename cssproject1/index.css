@@ -239,12 +239,17 @@ nav label:hover{
     body {
         padding-left: 1em;
         padding-right: 1em;
+        margin-left: 3em;;
     }
 
+   
     nav {
         height: 66vh;
     }
     
+    nav label {
+        width: 2em;
+    }
     .flex-row {
         gap: 15px;
     }
@@ -264,11 +269,16 @@ nav label:hover{
         height: auto;
         margin: 0 auto; 
     }
-
-    img {
-        width:320px;
+/* 
+    img #home{
+        width:20px;
+    } */
+    #home img {
+        padding-top: 2em;
+        padding-bottom: 6em;
+        width: 90%;
+        margin-left: 15%;
     }
-
 }
 
 /* @media (max-width: 1000px) {
@@ -349,7 +359,8 @@ nav label:hover{
     #home img {
         padding-top: 2em;
         padding-bottom: 6em;
-        width: 46em;
+        width: 90%;
+        margin-left: 10%;
     }
 
     /* .IMG {
@@ -444,10 +455,13 @@ nav label:hover{
 @media (max-height: 850px)
 {
     nav label {
-        font-size: x-small;
+        font-size: 0.4em;
     }
-
 }
+
+
+
+
 
 /* #home {
     display: block;
