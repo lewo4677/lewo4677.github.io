@@ -300,6 +300,10 @@ nav label:hover{
 
     }
 
+    body h2, h6 {
+        margin-left: 18%;
+    }
+
     nav label{
       padding-left: 4px;
       padding-right: 4px;
@@ -437,10 +441,10 @@ nav label:hover{
     }
 }
 
-@media (max-height: 1000px)
+@media (max-height: 850px)
 {
-    .nav label {
-        color:aqua;
+    nav label {
+        font-size: x-small;
     }
 
 }
