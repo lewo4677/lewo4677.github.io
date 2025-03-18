@@ -235,21 +235,22 @@ nav label:hover{
 } */
 
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
     body {
         padding-left: 1em;
         padding-right: 1em;
-        margin-left: 3em;;
+        margin-left: 20%;
+    
     }
 
+    /* .concertimgs {
+        max-width: 100px;
+    } */
    
     nav {
         height: 66vh;
     }
-    
-    nav label {
-        width: 2em;
-    }
+
     .flex-row {
         gap: 15px;
     }
@@ -260,15 +261,9 @@ nav label:hover{
     
     body h2 {
         font-size: 1.5em;
+        margin-left: 10em;;
     }
-    .IMG {
-        width: 320px;; 
-        max-width: 600px;
-        padding: 20px; 
-        box-sizing: border-box; 
-        height: auto;
-        margin: 0 auto; 
-    }
+    
 /* 
     img #home{
         width:20px;
