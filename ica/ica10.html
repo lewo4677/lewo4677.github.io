@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: blue;
+            border: 10px solid greenyellow;
+            width: 400px;
+            height: 200px;
+            margin-top: 20px;;
+        }
+
+        .box2 {
+            border: 20px solid black;
+            background-image: url('img/image1.jpg');
+            margin-top: 30px;
+            width: 600px;
+            height:800px;
+        }
+    </style>
+</head>
+<body>
+    <button>Click me</button>
+    <div class="box">
+        <script>
+            let box = document.querySelector('.box');
+            box.addEventListener('click', changeColor);
+
+            function changeColor() {
+                box.style = "background-color: aquamarine; border: 40px dotted magenta";
+            }
+
+            
+        </script>
+    </div>
+    
+    <div class="box2">
+        <script>
+            
+            let box2 = document.querySelector('.box2');
+            box2.addEventListener('click', changeImage)
+
+            function changeImage() {
+                box2.style = "border: yellow";
+                box2.style.backgroundImage = "url('img/image2.jpg)";
+            }
+            
+        </script>
+    </div>
+
+</body>
+</html>
