@@ -6,7 +6,7 @@
 @property --＠color-1 {
   syntax: "<color>";
   inherits: false;
-  initial-value: hsl(64, 100%, 62%);
+  initial-value: hwb(64 24% 0%);
 }
 
 @property --＠color-2 {
