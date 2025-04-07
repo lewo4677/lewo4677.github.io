@@ -1,0 +1,108 @@
+// const displayedImage = document.querySelector('.displayed-img');
+// const thumbBar = document.querySelector('.thumb-bar');
+
+// const btn = document.querySelector('button');
+// const overlay = document.querySelector('.overlay');
+
+// /* Declaring the array of image filenames */
+// const imageArr = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'];
+
+// /* Declaring the alternative text for each image file */
+// const images = [
+//     { file: 'pic1.jpg', alt: 'mountain' },
+//     { file: 'pic2.jpg', alt: 'border collie' },
+//     { file: 'pic3.jpg', alt: 'waves' },
+//     { file: 'pic4.jpg', alt: 'sunset' },
+//     { file: 'pic5.jpg', alt: 'little dog' }
+//   ];
+  
+
+// /* Looping through images */
+
+// const newImage = document.createElement('img');
+// newImage.setAttribute('src', xxx);
+// newImage.setAttribute('alt', xxx);
+// thumbBar.appendChild(newImage);
+
+// images.forEach((img) => 
+// {
+//     const newImage = document.createElement('img');
+//     newImage.src = 'images/' + img.file;
+//     newImage.alt = img.alt;
+//     thumbBar.appendChild(newImage);
+  
+//     newImage.addEventListener('click', () => 
+//     {
+//       displayedImage.src = 'images/' + img.file;
+//       displayedImage.alt = img.alt;
+//     });
+// });
+
+
+// /* Wiring up the Darken/Lighten button */
+
+// btn.addEventListener('click', () => 
+// {
+//     const curr = btn.getAttribute('class');
+//     if (curr === 'dark') 
+//         {
+//       btn.setAttribute('class', 'light');
+//       btn.textContent = 'Lighten';
+//       overlay.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+//     } 
+//     else 
+//     {
+//       btn.setAttribute('class', 'dark');
+//       btn.textContent = 'Darken';
+//       overlay.style.backgroundColor = 'rgb(0 0 0 / 0%)';
+//     }
+// });
+
+
+const displayedImage = document.querySelector('.displayed-img');
+const thumbBar = document.querySelector('.thumb-bar');
+const btn = document.querySelector('button');
+const overlay = document.querySelector('.overlay');
+
+/* Declaring the array of image filenames */
+const imageArr = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'];
+
+/* Declaring the alternative text for each image file */
+const altText = {
+  '1.jpg': 'mountain',
+  '2.jpg': 'border collie',
+  '3.jpg': 'waves',
+  '4.jpg': 'sunset',
+  '5.jpg': 'little dog'
+};
+
+/* Looping through images */
+for (let i = 0; i < imageArr.length; i++) {
+  const fileName = imageArr[i];
+  const alt = altText[fileName];
+
+  const newImage = document.createElement('img');
+  newImage.setAttribute('src', 'images/' + fileName);
+  newImage.setAttribute('alt', alt);
+  thumbBar.appendChild(newImage);
+
+  newImage.addEventListener('click', () => {
+    displayedImage.setAttribute('src', 'images/' + fileName);
+    displayedImage.setAttribute('alt', alt);
+  });
+}
+
+/* Wiring up the Darken/Lighten button */
+btn.addEventListener('click', () => {
+  const curr = btn.getAttribute('class');
+  if (curr === 'dark') {
+    btn.setAttribute('class', 'light');
+    btn.textContent = 'Lighten';
+    overlay.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+  } else {
+    btn.setAttribute('class', 'dark');
+    btn.textContent = 'Darken';
+    overlay.style.backgroundColor = 'rgb(0 0 0 / 0%)';
+  }
+});
+
