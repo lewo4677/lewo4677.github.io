@@ -73,7 +73,7 @@ const altText = {
   '2.jpg': 'border collie',
   '3.jpg': 'waves',
   '4.jpg': 'sunset',
-  '5.jpg': 'little dog'
+  '5.jpg': 'beach'
 };
 
 /* Looping through images */
