@@ -3,58 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>The Office Quote Generator</title>
 </head>
 <body>
-    
+    <div class="quote-back">
+        <div id="js-quote-text">DOGS!.</div>
+        <button id="js-new-quote">New Dog Fact</button>
+    </div>
+      
+    <script src="main.js"></script>
 </body>
-<script>
-    var newBtn = document.querySelector('#js-new-quote').addEventListener('click', getQuote);
-    var answerBtn = document.querySelector('#js-tweet').addEventListener('click', displayAnswer);
-
-    // ✅ New API endpoint
-    var endpoint = "https://akashrajpurohit.github.io/the-office-api/api/quotes/random";
-
-    let current = {
-        quote: "",
-        character: ""
-    };
-
-    async function getQuote() {
-        try {
-            const response = await fetch(endpoint);
-
-            if (!response.ok) {
-                throw Error(response.statusText);
-            }
-
-            const json = await response.json();
-
-            // ✅ Show the quote
-            displayQuote(json.quote);
-
-            current.quote = json.quote;
-            current.character = json.character;
-
-        } catch (err) {
-            console.log(err);
-            alert('Failed to fetch a quote!');
-        }
-    }
-
-    function displayQuote(quote) {
-        const quoteText = document.querySelector('#js-quote-text');
-        quoteText.textContent = `"${quote}"`;
-    }
-
-    function displayAnswer() {
-        const answerText = document.querySelector('#js-answer-text');
-        answerText.textContent = `— ${current.character}`;
-    }
-
-    // ✅ Load a quote on first page load
-    getQuote();
-
-</script>
-
 </html>
