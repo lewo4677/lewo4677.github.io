@@ -60,6 +60,7 @@ function getRaise()
     {
         if (company.employees[i].raise === true)
         {
+
             company.employees[i].salary *= 1.1;
             company.employees[i].raise = false;
         }
@@ -71,7 +72,7 @@ getRaise();
 
 for (let i = 0; i < 4; i++)
 {
-    console.log("Employee name: ", company.employees[i].name, ", Salary: ", company.employees[i].salary, "\n")
+    console.log("Employee name: ", company.employees[i].name, ", Salary after potential raise: ", company.employees[i].salary, "\n")
 }
 
 
