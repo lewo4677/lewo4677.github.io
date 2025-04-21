@@ -78,15 +78,17 @@ function random(min, max) {
                 const dx = this.x - ball.x;
                 const dy = this.y - ball.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
+
+                const combined_radius = this.size + ball.size - distance;
         
                 if (distance < this.size + ball.size)
                 {
                     ball.color = this.color = randomRGB();
 
-                    this.velX = -this.velX;
-                    this.velY = -this.velY;
-                    ball.velX = -ball.velX;
-                    ball.velY = -ball.velY;
+                    this.velX = -this.velX - combined_radius;
+                    this.velY = -this.velY - combined_radius;
+                    ball.velX = -ball.velX - combined_radius;
+                    ball.velY = -ball.velY - combined_radius;
                 }
                 
             }
