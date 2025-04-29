@@ -73,8 +73,9 @@ let rankings = {
   
   let phoneNumber = "";
   
-  // Fisher-Yates shuffle
-  function shuffle(array) {
+  // shuffling characters
+  function shuffle(array) 
+  {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
@@ -115,13 +116,39 @@ let rankings = {
   });
   
   // Reset phone number
-  function submit() {
-    if (phoneNumber.length > 0) {
-      alert("Phone Number submitted: " + phoneNumber);
-      phoneNumber = "";
-      updatePhoneNumberDisplay();
+  function submit() 
+  {
+    if (phoneNumber.length == 10) {
+        alert("Phone Number submitted: " + phoneNumber);
     }
+    else 
+    {
+        alert("Not sufficient length")
+    }
+    phoneNumber = "";
+    updatePhoneNumberDisplay();
   }
+
+  function reset() 
+  {
+    phoneNumber = "";
+    updatePhoneNumberDisplay();
+  }
+
+//   function shuffleLineup() {
+//     const lineup = document.querySelector('.lineup');
+//     const boxes = Array.from(lineup.children);
+  
+//     // Fisher-Yates shuffle
+//     for (let i = boxes.length - 1; i > 0; i--) {
+//       const j = Math.floor(Math.random() * (i + 1));
+//       [boxes[i], boxes[j]] = [boxes[j], boxes[i]];
+//     }
+  
+//     // Append the boxes in new order
+//     boxes.forEach(box => lineup.appendChild(box));
+//   }
+  
   
   // Load lineup when page loads
   generateLineup();
