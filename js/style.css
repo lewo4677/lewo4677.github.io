@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* for the shuffle button*/
+    background-color: #f0f0f0;
+    font-family: 'Cascadia Mono';
+    font-size: 100px;
+}
+  
+.lineup {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+  
+.box {
+    width: 500px;
+    height: 500px;
+    margin: 30px;
+    background: white;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+  
+/* .character {
+    width: 100%;
+    height: auto;
+} */
+
+  
+.cascadia-mono-1 {
+    font-family: "Cascadia Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.reset{
+    margin-top: 200px;
+    width: 500px;
+    height: 220px;
+    border-radius: 40px;
+    font-size: 80px;
+    background-color: rgb(255, 213, 227);
+    font-family: 'Cascadia Mono';
+    border-width: 20px;
+    border-color: rgb(170, 0, 237);
+    color:rgb(170, 0, 237);
+}
+
+.shuffle{
+    margin-top: 30px;
+    width: 1500px;
+    height: 220px;
+    border-radius: 40px;
+    font-size: 80px;
+    background-color: rgb(178, 252, 255);
+    font-family: 'Cascadia Mono';
+    border-width: 20px;
+    border-color: rgb(0, 132, 255);
+    color: rgb(0, 132, 255);
+}
+
+.reset:hover {
+    background-color: rgb(170, 0, 237);
+    color: rgb(255, 203, 220);
+    border-color: rgb(255, 203, 220);
+}
+
+.shuffle:hover {
+    background-color: rgb(0, 132, 255);
+    color: rgb(178, 252, 255);
+    border-color: rgb(178, 252, 255);
+}
+  
