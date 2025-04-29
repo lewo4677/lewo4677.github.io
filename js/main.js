@@ -91,7 +91,7 @@ let rankings = {
       const rankArray = rankings[positions[index]];
       const randomChar = rankArray[Math.floor(Math.random() * rankArray.length)];
       
-      box.innerHTML = `<img src="./images/${randomChar}" alt="${randomChar}" style="max-width: 90%; max-height: 90%;">`;
+      box.innerHTML = `<img src="./${randomChar}" alt="${randomChar}" style="max-width: 90%; max-height: 90%;">`;
       
       // Set data-number attribute so we know what number this box is
       box.setAttribute("data-number", positions[index]);
