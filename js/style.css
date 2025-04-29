@@ -44,7 +44,7 @@ body {
     font-style: normal;
 }
 
-.reset{
+.submit{
     margin-top: 200px;
     width: 500px;
     height: 220px;
@@ -70,7 +70,7 @@ body {
     color: rgb(0, 132, 255);
 }
 
-.reset:hover {
+.submit:hover {
     background-color: rgb(170, 0, 237);
     color: rgb(255, 203, 220);
     border-color: rgb(255, 203, 220);
