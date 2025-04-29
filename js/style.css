@@ -9,6 +9,10 @@ body {
     font-family: 'Cascadia Mono';
     font-size: 100px;
 }
+
+h1 {
+    font-size: 40px;
+}
   
 .lineup {
     display: flex;
