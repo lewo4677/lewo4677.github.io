@@ -100,7 +100,8 @@ let rankings = {
   }
   
   // Update phone number display
-  function updatePhoneNumberDisplay() {
+  function updatePhoneNumberDisplay() 
+  {
     document.getElementById("phoneNumberDisplay").textContent = `Phone Number: ${phoneNumber}`;
   }
   
