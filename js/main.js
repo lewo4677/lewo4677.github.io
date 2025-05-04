@@ -124,7 +124,7 @@ let rankings = {
     }
     else 
     {
-        alert("Not sufficient length")
+        alert("Not sufficient length");     
     }
     phoneNumber = "";
     updatePhoneNumberDisplay();
@@ -132,8 +132,10 @@ let rankings = {
 
   function reset() 
   {
-    phoneNumber = "";
+    phoneNumber = ""; 
+    generateLineup();
     updatePhoneNumberDisplay();
+    
   }
 
 //   function shuffleLineup() {
