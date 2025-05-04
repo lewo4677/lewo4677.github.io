@@ -20,7 +20,7 @@
 //     0: ["dwight.jpg", "andy_dwyer.jpg", "jerry_gergich.jpg", "hitchcock_and_scully.jpg", "klaus_umbrella.jpg", "elle.jpg", "april_ludgate.jpg", "creed_bratton.jpg", "gina.jpg", "robin.jpg"]
 //   };
   
-//   // Function to shuffle an array (Fisher-Yates)
+//   
 //   function shuffle(array) {
 //     for (let i = array.length - 1; i > 0; i--) {
 //       const j = Math.floor(Math.random() * (i + 1));
@@ -29,7 +29,7 @@
 //     return array;
 //   }
   
-//   // Build the randomized lineup
+//  
 //   function createLineup() {
 //     const lineupDiv = document.getElementById("lineup");
 //     lineupDiv.innerHTML = ""; // Clear previous
@@ -58,22 +58,22 @@
   
 
 let rankings = {
-    1: ["img/1/charles_minor.jpg", "img/1/amy_santiago.jpg", "img/1/terry_crews.jpg", "img/1/monica.jpg", "img/1/ross.jpg", "img/1/claire_dunphy.jpg", "img/1/nathan_shelley.jpg", "img/1/lucas_sinclair.jpg", "img/1/luther_umbrella.jpg", "img/1/jay_pritchett.jpg"],
-    2: ["img/2/pam_beesley.jpg", "img/2/jim_halpert.jpg", "img/2/rachel.jpg", "img/2/leonard_hofstadter.jpg", "img/2/phyllis.jpg", "img/2/angela.jpg", "img/2/tom_haverford.jpeg", "img/2/manny_delgado.jpg", "img/2/chris_traeger.jpg", "img/2/mitchell_modern_family.jpg"],
-    3: ["img/3/nellie.jpg", "img/3/mark_brandanawitz.jpg", "img/3/ben_umbrella.jpg", "img/3/raj.jpg", "img/3/hailey.jpg", "img/3/andy_bernard.jpg", "img/3/mike.jpg", "img/3/gloria.jpg", "img/3/erin_hannon.jpg", "img/3/janice_friends.jpg"],
-    4: ["img/4/cece.jpg", "img/4/stanley.jpg", "img/4/penny.jpg", "img/4/elaine_bennis.jpg", "img/4/kelly.jpg", "img/4/ryan.jpg", "img/4/coach.jpg", "img/4/joey.jpg", "img/4/allison_umbrella.jpg", "img/4/aly_new_girl.jpg"],
-    5: ["img/5/jess.jpg", "img/5/rosa_diaz.jpg", "img/5/ben_wyatt.jpg", "img/5/coach_new_girl.jpg", "img/5/ted_lasso_soccer_player.jpg", "img/5/george_costanza.jpg", "img/5/donna.jpg", "img/5/captain_holt.jpg", "img/5/nancy.jpg", "img/5/robby_new_girl.jpg"],
-    6: ["img/6/toby.jpg", "img/6/luke_modern_family_son.jpg", "img/6/jerry.jpg", "img/6/ted_lasso_soccer_player2.jpg", "img/6/jan_levinson.jpg", "img/6/coach_beard.jpg", "img/6/jean_ralphio.jpg", "img/6/schmidt.jpg", "img/6/viktor_umbrella.jpg", "img/6/diego_umbrella.jpg"],
-    7: ["img/7/sheldon.jpg", "img/7/amy_farrah_fowler.jpg", "img/7/the_boss_lady_ted_lasso.jpg", "img/7/chandler.jpg", "img/7/cameron_modern_family.jpg", "img/7/phoebe.jpg", "img/7/winston.jpg", "img/7/meredith.jpg", "img/7/joyce.jpg", "img/7/will_byers.jpg"],
+    1: ["img/1/charles_minor.jpg", "img/1/amy_santiago.avif", "img/1/terry_crews.avif", "img/1/monica.jpg", "img/1/ross.jpg", "img/1/claire_dunphy.jpg", "img/1/Nathan_shelley.jpg", "img/1/lucas_sinclaire.jpg", "img/1/luther_umbrella.jpg", "img/1/jay_pritchett.jpg"],
+    2: ["img/2/pam_beesly.jpg", "img/2/jim_halpert.jpg", "img/2/rachel.avif", "img/2/leonard_hofstadter.jpeg", "img/2/phyllis.jpg", "img/2/angela.jpeg", "img/2/tom_haverford.jpeg", "img/2/manny_delgado.jpg", "img/2/chris_traeger.jpg", "img/2/mitchell.jpg"],
+    3: ["img/3/nellie.jpg", "img/3/mark_brandanawitz.jpg", "img/3/ben_umbrella.jpg", "img/3/raj.webp", "img/3/hailey.jpg", "img/3/andy_bernard.jpg", "img/3/ryan.webp","img/3/gloria.jpg", "img/3/erin_hannon.jpg", "img/3/janice.jpg"],
+    4: ["img/4/cece.jpg", "img/4/stanley.jpg", "img/4/penny.jpg", "img/4/elaine_bennes.jpg", "img/4/kelly.jpg", "img/4/coach.jpg",  "img/4/mike.jpg", "img/4/joey.jpg", "img/4/allison_umbrella.jpg", "img/4/aly_new_girl.webp"],
+    5: ["img/5/jess.jpg", "img/5/rosa_diaz.jpg", "img/5/ben_wyatt.jpg", "img/5/coach.jpg", "img/5/jamie.jpg", "img/5/george_costanza.jpg", "img/5/donna.jpg", "img/5/captain_holt.avif", "img/5/nancy.jpg", "img/5/robby.avif"],
+    6: ["img/6/toby.jpg", "img/6/luke.jpg", "img/6/jerry_seinfeld.jpg", "img/6/roy.jpg", "img/6/jan.jpg", "img/6/boss_lady.jpg", "img/6/jean_ralphio.jpg", "img/6/schmidt.jpg", "img/6/viktor.jpg", "img/6/diego.jpg"],
+    7: ["img/7/sheldon.jpg", "img/7/amy_farrah_fowler.jpg", "img/7/ted_lasso.jpg", "img/7/chandler.jpg", "img/7/cameron_modern_family.jpg", "img/7/phoebe.jpg", "img/7/winston.jpg", "img/7/meredith.jpg", "img/7/joyce.jpg", "img/7/will_byers.jpg"],
     8: ["img/8/nick.jpg", "img/8/jake_peralta.jpg", "img/8/newman.jpg", "img/8/howard.jpg", "img/8/kramer.jpg", "img/8/danny_ted_lasso.jpg", "img/8/steve_harrington.jpg", "img/8/phil.jpg", "img/8/kevin_malone.jpg", "img/8/number_5.jpg"],
-    9: ["img/9/michael_scott.jpg", "img/9/madmax.jpg", "img/9/charles_boyle.jpg", "img/9/leslie_knope.jpg", "img/9/ted_lasso.jpg", "img/9/outside_dave.jpg", "img/9/mose.jpg", "img/9/ron.jpg", "img/9/jim_hopper.jpg", "img/9/dustin_henderson.jpg"],
+    9: ["img/9/michael_scott.jpg", "img/9/madmax.jpg", "img/9/charles_boyle.jpg", "img/9/leslie_knope.jpg", "img/9/coach_beard.jpg", "img/9/outside_dave.jpg", "img/9/mose.jpg", "img/9/ron.jpg", "img/9/jim_hopper.jpg", "img/9/dustin_henderson.jpg"],
     0: ["img/0/dwight.jpg", "img/0/andy_dwyer.jpg", "img/0/jerry_gergich.jpg", "img/0/hitchcock_and_scully.jpg", "img/0/klaus_umbrella.jpg", "img/0/elle.jpg", "img/0/april_ludgate.jpg", "img/0/creed_bratton.jpg", "img/0/gina.jpg", "img/0/robin.jpg"]
   };
   
   
   let phoneNumber = "";
   
-  // shuffling characters
+  // shuffling 
   function shuffle(array) 
   {
     for (let i = array.length - 1; i > 0; i--) {
@@ -83,8 +83,14 @@ let rankings = {
     return array;
   }
   
-  // Create a shuffled lineup
+  
   function generateLineup() {
+    shuffle(rankings);
+    for (let i = 0; i < rankings.length; i++) {
+        let box = document.getElementById(i);
+        box.innerHTML = rankings[i];
+      }
+      
     const positions = shuffle([0,1,2,3,4,5,6,7,8,9]);
   
     positions.forEach((pos, index) => {
@@ -94,29 +100,31 @@ let rankings = {
       
       box.innerHTML = `<img src="./${randomChar}" alt="${randomChar}" style="max-width: 90%; max-height: 90%;">`;
       
-      // Set data-number attribute so we know what number this box is
+ 
       box.setAttribute("data-number", positions[index]);
     });
   }
   
-  // Update phone number display
+  
+ 
   function updatePhoneNumberDisplay() 
   {
     document.getElementById("phoneNumberDisplay").textContent = `Phone Number: ${phoneNumber}`;
   }
-  
-  // Add click event to boxes
+
   document.querySelectorAll('.box').forEach(box => {
     box.addEventListener('click', () => {
       const number = box.getAttribute("data-number");
-      if (number !== null && phoneNumber.length < 10) {
+
+      if (number !== null && phoneNumber.length < 10) 
+        {
         phoneNumber += number;
         updatePhoneNumberDisplay();
       }
     });
   });
   
-  // Reset phone number
+
   function submit() 
   {
     if (phoneNumber.length == 10) {
@@ -142,7 +150,7 @@ let rankings = {
 //     const lineup = document.querySelector('.lineup');
 //     const boxes = Array.from(lineup.children);
   
-//     // Fisher-Yates shuffle
+//     
 //     for (let i = boxes.length - 1; i > 0; i--) {
 //       const j = Math.floor(Math.random() * (i + 1));
 //       [boxes[i], boxes[j]] = [boxes[j], boxes[i]];

@@ -19,7 +19,9 @@ h2 {
 }
   
 h3 {
-    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+
     font-size: 24px;
 }
 .lineup {
@@ -31,6 +33,7 @@ h3 {
 }
   
 .box {
+    font-size: 10px;
     width: 125px;
     height: 125px;
     margin: 7.5px;
