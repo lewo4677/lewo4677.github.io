@@ -7,19 +7,19 @@ body {
     flex-direction: column; /* for the shuffle button*/
     background-color: #f0f0f0;
     font-family: 'Cascadia Mono';
-    font-size: 10px;
+    font-size: 30px;
 }
 
 h1 {
-    font-size: 8px;
+    font-size: 24px;
 }
 
 h2 {
-    font-size: 10px;
+    font-size: 35px;
 }
   
 h3 {
-    font-size: 8px;
+    font-size: 24px;
 }
 .lineup {
     display: flex;
@@ -30,16 +30,16 @@ h3 {
 }
   
 .box {
-    width: 100px;
-    height: 100px;
-    margin: 6px;
+    width: 125px;
+    height: 125px;
+    margin: 7.5px;
     background: white;
-    border: 4px solid #333;
+    border: 5px solid #333;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 25px;
 }
   
 /* .character {
@@ -61,42 +61,42 @@ h3 {
 }
 
 .submit{
-    margin-top: 40px;
-    margin-right: 3px;
-    width: 100px;
-    height: 44px;
-    border-radius: 8px;
-    font-size: 16px;
+    margin-top: 50px;
+    margin-right: 3.75px;
+    width: 125px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
     background-color: rgb(255, 213, 227);
     font-family: 'Cascadia Mono';
-    border-width: 4px;
+    border-width: 5px;
     border-color: rgb(170, 0, 237);
     color:rgb(170, 0, 237);
 }
 
 .shuffle{
-    margin-top: 6px;
-    width: 350px;
-    height: 44px;
-    border-radius: 8px;
-    font-size: 16px;
+    margin-top: 7.5px;
+    width: 437.5px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
     background-color: rgb(178, 252, 255);
     font-family: 'Cascadia Mono';
-    border-width: 4px;
+    border-width: 5px;
     border-color: rgb(0, 132, 255);
     color: rgb(0, 132, 255);
 }
 
 .reset{
-    margin-top: 40px;
-    margin-left: 3px;
-    width: 100px;
-    height: 44px;
-    border-radius: 8px;
-    font-size: 16px;
+    margin-top: 50px;
+    margin-left: 3.75px;
+    width: 125px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
     background-color: rgb(255, 218, 178);
     font-family: 'Cascadia Mono';
-    border-width: 4px;
+    border-width: 5px;
     border-color: rgb(255, 64, 0); 
     color: rgb(255, 64, 0);
 }
