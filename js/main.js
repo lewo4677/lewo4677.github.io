@@ -59,7 +59,7 @@
 
 let rankings = {
     1: ["img/1/charles_minor.jpg", "img/1/amy_santiago.jpg", "img/1/terry_crews.jpg", "img/1/monica.jpg", "img/1/ross.jpg", "img/1/claire_dunphy.jpg", "img/1/nathan_shelley.jpg", "img/1/lucas_sinclair.jpg", "img/1/luther_umbrella.jpg", "img/1/jay_pritchett.jpg"],
-    2: ["img/2/pam_beesley.jpg", "img/2/jim_halpert.jpg", "img/2/rachel.jpg", "img/2/leonard_hofstadter.jpg", "img/2/phyllis.jpg", "img/2/angela.jpg", "img/2/tom_haverford.jpg", "img/2/manny_delgado.jpg", "img/2/chris_traeger.jpg", "img/2/mitchell_modern_family.jpg"],
+    2: ["img/2/pam_beesley.jpg", "img/2/jim_halpert.jpg", "img/2/rachel.jpg", "img/2/leonard_hofstadter.jpg", "img/2/phyllis.jpg", "img/2/angela.jpg", "img/2/tom_haverford.jpeg", "img/2/manny_delgado.jpg", "img/2/chris_traeger.jpg", "img/2/mitchell_modern_family.jpg"],
     3: ["img/3/nellie.jpg", "img/3/mark_brandanawitz.jpg", "img/3/ben_umbrella.jpg", "img/3/raj.jpg", "img/3/hailey.jpg", "img/3/andy_bernard.jpg", "img/3/mike.jpg", "img/3/gloria.jpg", "img/3/erin_hannon.jpg", "img/3/janice_friends.jpg"],
     4: ["img/4/cece.jpg", "img/4/stanley.jpg", "img/4/penny.jpg", "img/4/elaine_bennis.jpg", "img/4/kelly.jpg", "img/4/ryan.jpg", "img/4/coach.jpg", "img/4/joey.jpg", "img/4/allison_umbrella.jpg", "img/4/aly_new_girl.jpg"],
     5: ["img/5/jess.jpg", "img/5/rosa_diaz.jpg", "img/5/ben_wyatt.jpg", "img/5/coach_new_girl.jpg", "img/5/ted_lasso_soccer_player.jpg", "img/5/george_costanza.jpg", "img/5/donna.jpg", "img/5/captain_holt.jpg", "img/5/nancy.jpg", "img/5/robby_new_girl.jpg"],
