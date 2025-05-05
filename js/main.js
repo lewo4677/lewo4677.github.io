@@ -64,11 +64,12 @@ let rankings = {
     4: ["img/4/cece.jpg", "img/4/stanley.jpg", "img/4/penny.jpg", "img/4/elaine_bennes.jpg", "img/4/kelly.jpg", "img/4/coach.jpg",  "img/4/mike.jpg", "img/4/joey.jpg", "img/4/allison_umbrella.jpg", "img/4/aly_new_girl.webp"],
     5: ["img/5/jess.jpg", "img/5/rosa_diaz.jpg", "img/5/ben_wyatt.jpg", "img/5/coach.jpg", "img/5/jamie.jpg", "img/5/george_costanza.jpg", "img/5/donna.jpg", "img/5/captain_holt.avif", "img/5/nancy.jpg", "img/5/robby.avif"],
     6: ["img/6/toby.jpg", "img/6/luke.jpg", "img/6/jerry_seinfeld.jpg", "img/6/roy.jpg", "img/6/jan.jpg", "img/6/boss_lady.jpg", "img/6/jean_ralphio.jpg", "img/6/schmidt.jpg", "img/6/viktor.jpg", "img/6/diego.jpg"],
-    7: ["img/7/sheldon.jpg", "img/7/amy_farrah_fowler.jpg", "img/7/ted_lasso.jpg", "img/7/chandler.jpg", "img/7/cameron_modern_family.jpg", "img/7/phoebe.jpg", "img/7/winston.jpg", "img/7/meredith.jpg", "img/7/joyce.jpg", "img/7/will_byers.jpg"],
-    8: ["img/8/nick.jpg", "img/8/jake_peralta.jpg", "img/8/newman.jpg", "img/8/howard.jpg", "img/8/kramer.jpg", "img/8/danny_ted_lasso.jpg", "img/8/steve_harrington.jpg", "img/8/phil.jpg", "img/8/kevin_malone.jpg", "img/8/number_5.jpg"],
+    7: ["img/7/sheldon.webp", "img/7/amy.jpg", "img/7/ted_lasso.jpg", "img/7/chandler.webp", "img/7/cameron.webp", "img/7/phoebe.jpg", "img/7/winston.webp", "img/7/meredith.jpg", "img/7/joyce.jpg", "img/7/will_byers.jpg"],
+    8: ["img/8/nick.avif", "img/8/jake_peralta.jpg", "img/8/newman.jpg", "img/8/howard.jpg", "img/8/kramer.jpg", "img/8/danny_rojas.avif", "img/8/steve_harrington.jpg", "img/8/phil.jpg", "img/8/kevin.webp", "img/8/number_5.webp"],
     9: ["img/9/michael_scott.jpg", "img/9/madmax.jpg", "img/9/charles_boyle.jpg", "img/9/leslie_knope.jpg", "img/9/coach_beard.jpg", "img/9/outside_dave.jpg", "img/9/mose.jpg", "img/9/ron.jpg", "img/9/jim_hopper.jpg", "img/9/dustin_henderson.jpg"],
     0: ["img/0/dwight.jpg", "img/0/andy_dwyer.jpg", "img/0/jerry_gergich.jpg", "img/0/hitchcock_and_scully.jpg", "img/0/klaus_umbrella.jpg", "img/0/elle.jpg", "img/0/april_ludgate.jpg", "img/0/creed_bratton.jpg", "img/0/gina.jpg", "img/0/robin.jpg"]
   };
+
   
   
   let phoneNumber = "";
@@ -76,7 +77,8 @@ let rankings = {
   // shuffling 
   function shuffle(array) 
   {
-    for (let i = array.length - 1; i > 0; i--) {
+    for (let i = array.length - 1; i > 0; i--) 
+    {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
@@ -84,26 +86,77 @@ let rankings = {
   }
   
   
-  function generateLineup() {
-    shuffle(rankings);
-    for (let i = 0; i < rankings.length; i++) {
-        let box = document.getElementById(i);
-        box.innerHTML = rankings[i];
-      }
-      
-    const positions = shuffle([0,1,2,3,4,5,6,7,8,9]);
+  function generateLineup() 
+  {
+    // shuffle(rankings);
+
+    // for (let i = 0; i < rankings.length; i++) 
+    // {
+    //     let lineup = document.getElementById(i);
+    //     lineup.innerHTML = rankings[i];
+    // }
+
+    // const positions = shuffle([0,1,2,3,4,5,6,7,8,9]);
+    // //const lineup = shuffle([0,1,2,3,4,5,6,7,8,9]);
   
-    positions.forEach((pos, index) => {
-      const box = document.getElementById(positions[index]);
-      const rankArray = rankings[positions[index]];
-      const randomChar = rankArray[Math.floor(Math.random() * rankArray.length)];
+
+    
+
+    // positions.forEach((pos, index) => {
+    //   const box = document.getElementById(positions[index]);
+    //   const rankArray = rankings[positions[index]];
+    //   const randomChar = rankArray[Math.floor(Math.random() * rankArray.length)];
       
-      box.innerHTML = `<img src="./${randomChar}" alt="${randomChar}" style="max-width: 90%; max-height: 90%;">`;
+    //   box.innerHTML = `<img src="./${randomChar}" alt="${randomChar}" style="max-width: 90%; max-height: 90%;">`;
       
  
-      box.setAttribute("data-number", positions[index]);
+    //   box.setAttribute("data-number", positions[index]);
+    // });
+
+    // First, clear the phone number
+  phoneNumber = "";
+  updatePhoneNumberDisplay();
+  
+  // Create array of all possible digits (0-9)
+  const allDigits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  
+  // Shuffle the digits to randomize box positions
+  const shuffledDigits = shuffle([...allDigits]);
+  
+  // Get the lineup container
+  const lineup = document.querySelector('.lineup');
+  
+  // Clear the existing boxes
+  lineup.innerHTML = '';
+  
+  // Create new boxes in shuffled order
+  shuffledDigits.forEach(digit => {
+    // Select a random character from this digit's ranking
+    const rankArray = rankings[digit];
+    const randomChar = rankArray[Math.floor(Math.random() * rankArray.length)];
+    
+    // Create a new box
+    const box = document.createElement('div');
+    box.className = 'box';
+    box.setAttribute('data-number', digit);
+    
+    // Add the image to the box
+    box.innerHTML = `<img src="./${randomChar}" alt="${randomChar}" style="max-width: 90%; max-height: 90%;">`;
+    
+    // Add click event listener
+    box.addEventListener('click', () => {
+      if (phoneNumber.length < 10) {
+        phoneNumber += digit;
+        updatePhoneNumberDisplay();
+      }
     });
+    
+    // Add the box to the lineup
+    lineup.appendChild(box);
+  });
+  updatePhoneNumberDisplay();
   }
+  
   
   
  
