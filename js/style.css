@@ -24,19 +24,28 @@ h3 {
 
     font-size: 24px;
 }
-.lineup {
+/* .lineup {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     margin: 4px;
+} */
+
+.lineup {
+    display: grid;
+    grid-template-columns: repeat(5, 280px); /* 5 columns of 140px each */
+    grid-template-rows: repeat(2, 280px);    /* 2 rows of 140px each */
+    gap: 20px;                              /* Space between grid items */
+    justify-content: center;
+    margin: 20px 0;
 }
   
 .box {
     font-size: 10px;
-    width: 140px;
-    height: 140px;
-    margin: 4px;
+    width: 280px;
+    height: 280px;
+    margin: 10px;
     background: white;
     border: 5px solid #333;
     display: flex;
