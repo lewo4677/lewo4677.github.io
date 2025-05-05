@@ -114,7 +114,7 @@ let rankings = {
     // });
 
     // First, clear the phone number
-  phoneNumber = "";
+  //phoneNumber = "";
   updatePhoneNumberDisplay();
   
   // Create array of all possible digits (0-9)

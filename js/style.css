@@ -12,25 +12,25 @@ body {
 
 @keyframes ChangeColor {
     0% { 
-        background-color: rgb(170, 0, 237);
+        color: rgb(170, 0, 237);
     }
     16%{
-        background-color: rgb(255, 64, 0);
+        color: rgb(255, 64, 0);
     }
     32% {
-        background-color: rgb(255, 218, 178);
+        color: rgb(255, 218, 178);
     }
     48% {
-        background-color: rgb(255, 203, 220);
+        color: rgb(255, 203, 220);
     }
     64%{
-        background-color: rgb(178, 252, 255);
+        color: rgb(178, 252, 255);
     }
     80%{
-        background-color: rgb(0, 132, 255);
+        color: rgb(0, 132, 255);
     }
     100%{
-        background-color:  rgb(170, 0, 237);
+        color:  rgb(170, 0, 237);
     }
 }
 
@@ -41,6 +41,7 @@ h1 {
 h2 {
     font-size: 35px;
     animation: ChangeColor 2s ease-in-out infinite; 
+    text-shadow: black;
 }
   
 h3 {
@@ -61,7 +62,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(5, 280px); /* 5 columns of 140px each */
     grid-template-rows: repeat(2, 280px);    /* 2 rows of 140px each */
-    gap: 20px;                              /* Space between grid items */
+    gap: 6px;                              /* Space between grid items */
     justify-content: center;
     margin: 20px 0;
 }
