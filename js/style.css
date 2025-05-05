@@ -34,9 +34,9 @@ h3 {
   
 .box {
     font-size: 10px;
-    width: 125px;
-    height: 125px;
-    margin: 7.5px;
+    width: 140px;
+    height: 140px;
+    margin: 4px;
     background: white;
     border: 5px solid #333;
     display: flex;
