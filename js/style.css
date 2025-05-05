@@ -77,6 +77,10 @@ h3 {
     overflow: hidden;
     border-radius: 25px;
 }
+
+.box:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
   
 /* .character {
     width: 100%;
@@ -97,7 +101,7 @@ h3 {
 }
 
 .submit{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 3.75px;
     width: 125px;
     height: 55px;
@@ -124,7 +128,7 @@ h3 {
 }
 
 .reset{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 3.75px;
     width: 125px;
     height: 55px;
