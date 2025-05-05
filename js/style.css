@@ -10,12 +10,34 @@ body {
     font-size: 30px;
 }
 
+@keyframes glowAnimate {
+    0% {
+      text-shadow:
+        0 0 15px rgb(170, 0, 237),
+        0 0 20px rgb(0, 132, 255),
+        0 0 30px rgb(255, 64, 0);
+    }
+    50% {
+      text-shadow:
+        0 0 20px rgb(255, 203, 220),
+        0 0 25px rgb(178, 252, 255),
+        0 0 35px rgb(255, 218, 178);
+    }
+    100% {
+      text-shadow:
+        0 0 15px rgb(255, 64, 0),
+        0 0 20px rgb(0, 132, 255),
+        0 0 30px rgb(170, 0, 237);
+    }
+  }
+
 h1 {
     font-size: 24px;
 }
 
 h2 {
     font-size: 35px;
+    animation: glowAnimate 3s infinite alternate-reverse;
 }
   
 h3 {
