@@ -10,45 +10,42 @@ body {
     font-size: 30px;
 }
 
-@keyframes ChangeColor {
-    0% { 
-        color: rgb(170, 0, 237);
-    }
-    16%{
-        color: rgb(255, 64, 0);
-    }
-    32% {
-        color: rgb(255, 218, 178);
-    }
-    48% {
-        color: rgb(255, 203, 220);
-    }
-    64%{
-        color: rgb(178, 252, 255);
-    }
-    80%{
-        color: rgb(0, 132, 255);
-    }
-    100%{
-        color:  rgb(170, 0, 237);
-    }
+#phoneNumberDisplay {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color:rgb(0, 132, 255);
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 20px;
+}
+
+@keyframes animateTitle {
+
+    to {
+        background-position: 100%;
+    }
 }
 
 h2 {
     font-size: 35px;
-    animation: ChangeColor 2s ease-in-out infinite; 
-    text-shadow: 0 0 15xp black;
+    text-shadow: white, 3px 3px rgb(63, 63, 63);
+
+    background-image: linear-gradient(to right, rgb(170, 0, 237), rgb(255, 64, 0),  rgb(255, 218, 178), rgb(255, 203, 220), rgb(178, 252, 255), rgb(0, 132, 255),  rgb(170, 0, 237));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    background-position: -100%;
+    animation: animateTitle 3s infinite alternate-reverse; 
+
 }
   
 h3 {
-    padding-left: 100px;
+    padding-left: 150px;
     padding-right: 100px;
 
-    font-size: 24px;
+    font-size: 20px;
 }
 /* .lineup {
     display: flex;
