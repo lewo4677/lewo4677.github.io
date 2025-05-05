@@ -65,9 +65,9 @@ let rankings = {
     5: ["img/5/jess.jpg", "img/5/rosa_diaz.jpg", "img/5/ben_wyatt.jpg", "img/5/coach.jpg", "img/5/jamie.jpg", "img/5/george_costanza.jpg", "img/5/donna.jpg", "img/5/captain_holt.avif", "img/5/nancy.jpg", "img/5/robby.avif"],
     6: ["img/6/toby.jpg", "img/6/luke.jpg", "img/6/jerry_seinfeld.jpg", "img/6/roy.jpg", "img/6/jan.jpg", "img/6/boss_lady.jpg", "img/6/jean_ralphio.jpg", "img/6/schmidt.jpg", "img/6/viktor.jpg", "img/6/diego.jpg"],
     7: ["img/7/sheldon.webp", "img/7/amy.jpg", "img/7/ted_lasso.jpg", "img/7/chandler.webp", "img/7/cameron.webp", "img/7/phoebe.jpg", "img/7/winston.webp", "img/7/meredith.jpg", "img/7/joyce.jpg", "img/7/will_byers.jpg"],
-    8: ["img/8/nick.avif", "img/8/jake_peralta.jpg", "img/8/newman.jpg", "img/8/howard.jpg", "img/8/kramer.jpg", "img/8/danny_rojas.avif", "img/8/steve_harrington.jpg", "img/8/phil.jpg", "img/8/kevin.webp", "img/8/number_5.webp"],
-    9: ["img/9/michael_scott.jpg", "img/9/madmax.jpg", "img/9/charles_boyle.jpg", "img/9/leslie_knope.jpg", "img/9/coach_beard.jpg", "img/9/outside_dave.jpg", "img/9/mose.jpg", "img/9/ron.jpg", "img/9/jim_hopper.jpg", "img/9/dustin_henderson.jpg"],
-    0: ["img/0/dwight.jpg", "img/0/andy_dwyer.jpg", "img/0/jerry_gergich.jpg", "img/0/hitchcock_and_scully.jpg", "img/0/klaus_umbrella.jpg", "img/0/elle.jpg", "img/0/april_ludgate.jpg", "img/0/creed_bratton.jpg", "img/0/gina.jpg", "img/0/robin.jpg"]
+    8: ["img/8/nick.avif", "img/8/jake_peralta.jpg", "img/8/newman.jpg", "img/8/howard.jpg", "img/8/kramer.jpg", "img/8/danny_rojas.avif", "img/8/jim_hopper.jpg", "img/8/phil.jpg", "img/8/kevin.webp", "img/8/number_5.webp"],
+    9: ["img/9/michael_scott.jpg", "img/9/madmax.jpg", "img/9/charles_boyle.avif", "img/9/leslie_knope.jpg", "img/9/coach_beard.jpg", "img/9/jerry_gergich.jpg", "img/9/mose.jpg", "img/9/ron.jpg", "img/9/steve_harrington.jpg", "img/9/dustin.jpg"],
+    0: ["img/0/dwight.jpg", "img/0/andy_dwyer.webp", "img/0/robin.jpg", "img/0/hitchcock_and_scully.webp", "img/0/klaus_umbrella.avif", "img/0/elle.webp", "img/0/april_ludgate.webp", "img/0/creed_bratton.avif", "img/0/gina.jpg", "img/0/outside_dave.avif"]
   };
 
   
