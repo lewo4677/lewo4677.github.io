@@ -6,7 +6,6 @@
 
 
 
-// // TV character rankings by number (1-10, where 10 is 0)
 // let rankings = {
 //     1: ["charles_minor.jpg", "amy_santiago.jpg", "terry_crews.jpg", "monica.jpg", "ross.jpg", "claire_dunphy.jpg", "nathan_shelley.jpg", "lucas_sinclair.jpg", "luther_umbrella.jpg", "jay_pritchett.jpg"],
 //     2: ["pam_beesley.jpg", "jim_halpert.jpg", "rachel.jpg", "leonard_hofstadter.jpg", "phyllis.jpg", "angela.jpg", "tom_haverford.jpg", "manny_delgado.jpg", "chris_traeger.jpg", "mitchell_modern_family.jpg"],
@@ -34,15 +33,12 @@
 //     const lineupDiv = document.getElementById("lineup");
 //     lineupDiv.innerHTML = ""; // Clear previous
   
-//     // Create a shuffled list of number positions (0-9)
 //     const positions = shuffle([0,1,2,3,4,5,6,7,8,9]);
   
-//     // For each position, pick a random character from that ranking
 //     positions.forEach(pos => {
 //       const rankArray = rankings[pos];
 //       const randomChar = rankArray[Math.floor(Math.random() * rankArray.length)];
   
-//       // Create a card div for this character
 //       const card = document.createElement("div");
 //       card.className = "card";
 //       card.innerHTML = `
@@ -53,7 +49,6 @@
 //     });
 //   }
   
-//   // Load lineup when page loads
 //   createLineup();
   
 
@@ -117,33 +112,29 @@ let rankings = {
   //phoneNumber = "";
   updatePhoneNumberDisplay();
   
-  // Create array of all possible digits (0-9)
   const allDigits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   
-  // Shuffle the digits to randomize box positions
-  const shuffledDigits = shuffle([...allDigits]);
-  
-  // Get the lineup container
+  // shuffling to randomize the boxes
+  const shuffledDigits = shuffle([...allDigits]); //the ... makes it so it doesn't change the oringial array
   const lineup = document.querySelector('.lineup');
-  
-  // Clear the existing boxes
+  //reset
   lineup.innerHTML = '';
   
-  // Create new boxes in shuffled order
+//shuffling the characters within each of the boxes
   shuffledDigits.forEach(digit => {
-    // Select a random character from this digit's ranking
+    
     const rankArray = rankings[digit];
     const randomChar = rankArray[Math.floor(Math.random() * rankArray.length)];
     
-    // Create a new box
+    
     const box = document.createElement('div');
     box.className = 'box';
     box.setAttribute('data-number', digit);
     
-    // Add the image to the box
+    //this makes the html equal to the chosen pcicture in the folder
     box.innerHTML = `<img src="./${randomChar}" alt="${randomChar}" style="max-width: 90%; max-height: 90%;">`;
     
-    // Add click event listener
+   
     box.addEventListener('click', () => {
       if (phoneNumber.length < 10) {
         phoneNumber += digit;
@@ -209,11 +200,9 @@ let rankings = {
 //       [boxes[i], boxes[j]] = [boxes[j], boxes[i]];
 //     }
   
-//     // Append the boxes in new order
 //     boxes.forEach(box => lineup.appendChild(box));
 //   }
   
   
-  // Load lineup when page loads
   generateLineup();
   
