@@ -176,10 +176,10 @@ let rankings = {
     }
     else 
     {
-        alert("Not sufficient length");     
+        alert("Not sufficient length");  
+        return;   
     }
-    phoneNumber = "";
-    updatePhoneNumberDisplay();
+    reset();
   }
 
   function reset() 
