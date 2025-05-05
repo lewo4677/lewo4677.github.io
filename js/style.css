@@ -41,7 +41,7 @@ h1 {
 h2 {
     font-size: 35px;
     animation: ChangeColor 2s ease-in-out infinite; 
-    text-shadow: black;
+    text-shadow: 0 0 15xp black;
 }
   
 h3 {
@@ -60,18 +60,18 @@ h3 {
 
 .lineup {
     display: grid;
-    grid-template-columns: repeat(5, 280px); /* 5 columns of 140px each */
-    grid-template-rows: repeat(2, 280px);    /* 2 rows of 140px each */
+    grid-template-columns: repeat(5, 225px); /* 5 columns of 140px each */
+    grid-template-rows: repeat(2, 225px);    /* 2 rows of 140px each */
     gap: 6px;                              /* Space between grid items */
     justify-content: center;
-    margin: 20px 0;
+    
 }
   
 .box {
     font-size: 10px;
     width: 210px;
     height: 210px;
-    margin: 10px;
+    margin: 0px;
     background: white;
     border: 5px solid #333;
     display: flex;
