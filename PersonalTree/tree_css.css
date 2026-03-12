@@ -54,6 +54,7 @@ body
   justify-self: center;
   align-items: center;
   overflow: hidden;
+  margin: auto;
 }
 
 
