@@ -1,41 +1,4 @@
-
-// function displayMessage()
-// {
-//   const msg = document.getElementById("messages");
-
-//   msg.textContent = text;
-//   msg.classList.remove("message-pop");
-//   void msg.offsetWidth;   // restart animation
-//   msg.classList.add("message-pop");
-// }
-
-// function handleKey(event)
-// {
-//   if(event.key === "w")
-//   {
-//     displayMessage("WALK");
-//   }
-//   else if(event.key === " ")
-//   {
-//     displayMessage("FLY");
-//   }
-//   else if(event.key === "s")
-//   {
-//     displayMessage("SWIM");
-//   }
-//   else if(event.key === "c")
-//   {
-//     displayMessage("CLIMB");
-//   }
-//   else if(event.key === "t")
-//   {
-//     displayMessage("CRAWL");
-//   }
-//   else
-//   {
-//     displayMessage("error");
-//   }
-// }
+let isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
 
 let course = []; 
 
@@ -367,7 +330,10 @@ function randInt(min, max)
 
 function playGame() 
 {
-    document.getElementById("hiddenInput").focus();
+    if (isMobile)
+    {
+        document.getElementById("hiddenInput").focus();
+    }
     document.getElementById("messages").textContent = "";
     //extend box and play level 1
     let box = document.getElementById("game-border");
@@ -715,11 +681,14 @@ document.addEventListener("keydown", handleKey);
 //   document.getElementById("mobileInput").focus();
 // };
 
-// document.getElementById("hiddenInput").addEventListener("input", function(e)
-// {
-//     let key = e.target.value;
+if (isMobile)
+{
+    document.getElementById("hiddenInput").addEventListener("input", function(e)
+    {
+        let key = e.target.value;
 
-//     handleKey({ key: key });
+        handleKey({ key: key });
 
-//     e.target.value = "";
-// });
+        e.target.value = "";
+    });
+}
