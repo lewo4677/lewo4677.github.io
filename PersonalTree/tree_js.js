@@ -367,6 +367,7 @@ function randInt(min, max)
 
 function playGame() 
 {
+    document.getElementById("hiddenInput").focus();
     document.getElementById("messages").textContent = "";
     //extend box and play level 1
     let box = document.getElementById("game-border");
@@ -705,7 +706,16 @@ document.getElementById("play").addEventListener("click", playGame);
 
 document.addEventListener("keydown", handleKey);
 
-window.onload = function () 
+// window.onload = function () 
+// {
+//   document.getElementById("mobileInput").focus();
+// };
+
+document.getElementById("hiddenInput").addEventListener("input", function(e)
 {
-  document.getElementById("mobileInput").focus();
-};
+    let key = e.target.value;
+
+    handleKey({ key: key });
+
+    e.target.value = "";
+});

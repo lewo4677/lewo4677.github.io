@@ -7,7 +7,7 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   
 }
 
@@ -50,7 +50,7 @@ body
   line-height: 1.2;
 
   width: 90%;
-  height: 0px;
+  /* height: 0px; */
   justify-self: center;
   align-items: center;
   overflow: hidden;
