@@ -860,11 +860,11 @@ function handleKey(event)
         {
             if (choice === " " || choice === "s" || choice === "w" || choice === "c" || choice === "t")
             {
-                if (count === 3)
-                {
-                    count += 300;
-                }
-                else
+                // if (count === 3)
+                // {
+                //     count += 300;
+                // }
+                // else
                 {
                     count += 3;
                 }
