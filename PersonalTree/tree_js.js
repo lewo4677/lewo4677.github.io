@@ -1,4 +1,4 @@
-let isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
+const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
 
 let course = []; 
 
@@ -674,11 +674,18 @@ function handleKey(event)
 
 document.getElementById("play").addEventListener("click", playGame);
 
-document.addEventListener("keydown", function(e)
+if (!isMobile)
 {
-    if (isMobile) return; // ignore on phone
-    handleKey(e);
-});
+    document.addEventListener("keydown", function(e)
+    {
+
+        if (isMobile) 
+        {
+            return; // ignore on phone
+        }
+        handleKey(e);
+    })
+}
 
 // window.onload = function () 
 // {
