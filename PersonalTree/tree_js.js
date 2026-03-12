@@ -427,7 +427,7 @@ function handleKey(event)
     let line = "";
 
     let len = course[0].length;
-    let choice = event.key;
+    let choice = event.key.toLowerCase();
 
     // if (die == true)
     // {
@@ -674,7 +674,11 @@ function handleKey(event)
 
 document.getElementById("play").addEventListener("click", playGame);
 
-document.addEventListener("keydown", handleKey);
+document.addEventListener("keydown", function(e)
+{
+    if (isMobile) return; // ignore on phone
+    handleKey(e);
+});
 
 // window.onload = function () 
 // {
