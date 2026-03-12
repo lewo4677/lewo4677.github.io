@@ -1,0 +1,118 @@
+body 
+{
+  margin: 0;
+  background-color: #111;
+  color: white;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+#game-container 
+{
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+
+}
+
+#space
+{
+  height: 200px;
+}
+
+/* .player
+{
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+  background: white;
+} */
+
+.walk { background-color: rgb(3, 222, 3); }
+.swim { background-color: #0062ff; }
+.fly  { background-color: rgb(255, 255, 0); }
+.climb { background-color: rgb(149, 0, 255); }
+.crawl { background-color: rgb(255, 165, 0); } 
+.die { background-color: rgb(255, 0, 0); } 
+
+#game-border
+{
+  background: black;
+  padding: 0px;
+  border: 2px solid white;
+  white-space: pre;
+  overflow: hidden;
+  font-size: clamp(8px, 1.5vw, 18px);
+  line-height: 1.2;
+
+  width: 90%;
+  height: 0px;
+  justify-self: center;
+  overflow: hidden;
+}
+
+
+#ui 
+{
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+#messages
+{
+  height: 30px;
+}
+
+/* 
+@keyframes popFade
+{
+  0%   { opacity: 0; transform: translateY(10px); }
+  20%  { opacity: 1; transform: translateY(0); }
+  80%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.message-pop
+{
+  animation: popFade 1.5s ease;
+} */
+
+#play
+{
+  color: white;
+  font-family: monospace;
+}
+
+.play-box 
+{
+  background-color: #111;
+  color: white;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  height: 40px;
+  width: 90px;
+  white-space: pre;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.play-box:hover
+{
+  background-color: #414141;
+  cursor: pointer;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background: #000000;
+  transition: width 2s;
+}
+
