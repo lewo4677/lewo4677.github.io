@@ -354,189 +354,8 @@ function printCourse(course, choice, level)
             _7lines += line;
         }
         document.getElementById("game-border").innerHTML = _7lines;
-         
-    //handleKey();
-        // //die cases
-        // if (count != 0)
-        // {
-        //     if ((course[6][2 + count] !== '~') && choice === "s")
-        //     {
-        //         die = true;
-        //     }
-        //     else if (len - count <= 7)
-        //     {
-        //         flag = true;
-        //     }
-        //                 //if hit end of tree           //if in middle of tree    //if hit start of tree
-        //     if (choice == " ")
-        //     {
-        //         if ((course[2][2 + count] === '}' || course[2][3 + count] === '}' || course[2][4 + count] === '}' || course[2][2 + count] === '{'))
-        //         {
-        //             die = true;
-        //         }
-        //         if ((course[6][2 + count] === '\\' || course[6][3 + count] === '~' || course[6][4 + count] === '/' || course[6][4 + count] === '_'))
-        //         {                                                                                                         ///idk what i did it might break it
-        //             die = true;
-        //         }
-        //         if ((course[3][2 + count] === '_') || (course[4][2 + count] === '/' || course[4][2 + count] === '\\') || (course[5][2 + count] === '/' || course[5][2 + count] === '\\'))
-        //         {
-        //             die = true;
-        //         }
-
-        //     }
-        //     if (choice === "w" && course[5][2 + count] !== '_'  && course[5][2 + count] !== '|')
-        //     {
-        //         die = true;
-        //     }
-
-        //     if (choice === "c")
-        //     {
-        //         let good = 0;
-        //         if (course[3][2 + count] === '_')
-        //         {
-        //             climb = 1;
-        //             good++;
-        //         }
-        //         if (course[4][2 + count] === '/' || course[4][2 + count] === '\\')
-        //         {
-        //             climb = 2;
-        //             good++;
-        //         }
-        //         if (course[5][2 + count] === '/' || course[5][2 + count] === '\\')
-        //         {
-        //             climb = 3;
-        //             good++;
-        //         }
-        //         if (good !== 1)
-        //         {
-        //             die = true;
-        //         }
-        //     }
-
-        //     if ((choice === "t") && ((course[6][2 + count] !== '_') && (course[6][2 + count] !== '\\') && (course[6][2 + count] !== '/')))
-        //     {
-        //         die = true;
-        //     }
-        // }
-        // //printing course
-        
-        // for (let i = 0; i < 7; i++)
-        // {
-        //     line = "";
-        //     for (let j = 0; j < len - count; j++)
-        //     {
-        //         if (count === 0 && i === pos_row && j === 2)
-        //         {
-        //             //cout << WALK << course[i][j + count] << RESET;
-        //             line += '<span class="walk">' + course[i][j + count] + '</span>';
-        //         }
-
-        //         else if (i === 2 && j === 2 && choice === " ")
-        //         {
-        //             if (die == true)
-        //             {
-        //                 // cout << DIE << course[i][j + count] << RESET;
-        //                 line += '<span class="die">' + course[i][j + count] + '</span>';
-        //             }
-        //             else if (flag === true)
-        //             {
-        //                 // cout << FLY << course[i][j + count] << RESET;
-        //                 line += '<span class="fly">' + course[i][j + count] + '</span>';
-        //             }
-        //             else
-        //             {
-        //                 // cout << FLY << course[i][j + count] << RESET;
-        //                 line += '<span class="fly">' + course[i][j + count] + '</span>';
-        //             }
-        //         }
-        //         else if (i === 6 && j === 2 && choice === "s")
-        //         {
-        //             if (die === true)
-        //             {
-        //                 //cout << DIE << course[i][j + count] << RESET;
-        //                 line += '<span class="die">' + course[i][j + count] + '</span>';
-        //             }
-        //             else
-        //             {
-        //                 //cout << SWIM << course[i][j + count] << RESET;
-        //                 line += '<span class="swim">' + course[i][j + count] + '</span>';
-        //             }
-                    
-        //         }
-        //         else if (i === 5 && j === 2 && choice === "w")
-        //         {
-        //             if (die === true)
-        //             {
-        //                 //cout << DIE << course[i][j + count] << RESET;
-        //                 line += '<span class="die">' + course[i][j + count] + '</span>';
-        //             }
-        //             else if (flag === true)
-        //             {
-        //                 //cout << WALK << course[i][j + count] << RESET;
-        //                 line += '<span class="walk">' + course[i][j + count] + '</span>';
-        //             }
-        //             else
-        //             {
-        //                 //cout << WALK << course[i][j + count] << RESET;
-        //                 line += '<span class="walk">' + course[i][j + count] + '</span>';
-        //             }
-                    
-        //         }
-        //         else if (choice === "c" && ((climb === 1 && i === 3 && j === 2) || (climb === 2 && i === 4 && j === 2) || (climb === 3 && i === 5 && j === 2)))
-        //         {
-        //             if (climb === 1 && i === 3 && j === 2)
-        //             {
-        //                 //cout << CLIMB << course[i][j + count] << RESET;
-        //                 line += '<span class="climb">' + course[i][j + count] + '</span>';
-        //                 climb = 0;
-        //             }
-        //             if (climb === 2 && i === 4 && j === 2)
-        //             {
-        //                 //cout << CLIMB << course[i][j + count] << RESET;
-        //                 line += '<span class="climb">' + course[i][j + count] + '</span>';
-        //                 climb = 0;
-        //             }
-        //             if (climb === 3 && i === 5 && j === 2)
-        //             {
-        //                 //cout << CLIMB << course[i][j + count] << RESET;
-        //                 line += '<span class="climb">' + course[i][j + count] + '</span>';
-        //                 climb = 0;
-        //             }
-        //         }
-        //         else if (i === 6 && j === 2 && choice === "t")
-        //         {
-        //             if (die === true)
-        //             {
-        //                 //cout << DIE << course[i][j + count] << RESET;
-        //                 line += '<span class="die">' + course[i][j + count] + '</span>';
-        //             }
-        //             else if (flag === true)
-        //             {
-        //                 //cout << CRAWL << course[i][j + count] << RESET;
-        //                 line += '<span class="crawl">' + course[i][j + count] + '</span>';
-        //             }
-        //             else
-        //             {
-        //                 //cout << CRAWL << course[i][j + count] << RESET;
-        //                 line += '<span class="crawl">' + course[i][j + count] + '</span>';
-        //             }
-        //         }
-
-        //         else 
-        //         {
-        //             //cout << course[i][j + count];
-        //             line += course[i][j + count];
-        //         }
-
-        //     }
-        //     line += '\n';
-        //     _7lines += line;
-        // }
-        // document.getElementById("game-border").innerHTML = _7lines;
-
-        
-
     
+        
         
     
 }
@@ -860,14 +679,8 @@ function handleKey(event)
         {
             if (choice === " " || choice === "s" || choice === "w" || choice === "c" || choice === "t")
             {
-                // if (count === 3)
-                // {
-                //     count += 300;
-                // }
-                // else
-                {
-                    count += 3;
-                }
+
+                count += 3;
 
                 document.getElementById("messages").textContent = "";
                //keep = choice;
@@ -891,3 +704,8 @@ function handleKey(event)
 document.getElementById("play").addEventListener("click", playGame);
 
 document.addEventListener("keydown", handleKey);
+
+window.onload = function () 
+{
+  document.getElementById("mobileInput").focus();
+};
