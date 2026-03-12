@@ -624,6 +624,10 @@ function handleKey(event)
                     }
                     
                 }
+                else if (choice === "c" && die === true && i === 5 && j === 2)
+                {
+                    line += '<span class="die">' + course[i][j + count] + '</span>';
+                }
                 else if (choice === "c" && ((climb === 1 && i === 3 && j === 2) || (climb === 2 && i === 4 && j === 2) || (climb === 3 && i === 5 && j === 2)))
                 {
                     if (climb === 1 && i === 3 && j === 2)
@@ -711,11 +715,11 @@ document.addEventListener("keydown", handleKey);
 //   document.getElementById("mobileInput").focus();
 // };
 
-document.getElementById("hiddenInput").addEventListener("input", function(e)
-{
-    let key = e.target.value;
+// document.getElementById("hiddenInput").addEventListener("input", function(e)
+// {
+//     let key = e.target.value;
 
-    handleKey({ key: key });
+//     handleKey({ key: key });
 
-    e.target.value = "";
-});
+//     e.target.value = "";
+// });
